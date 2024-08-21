@@ -1,0 +1,47 @@
+body{
+    margin:0px;
+}
+/* Esablcemos que la clase conteiner va a ser un flex */
+.container{
+    /* El flex me permite hacer diferentes diseños, espacios, de un contenedor */
+    display: flex;
+    /* Para ajustar que las imagenes se vean en la pagina al agrandar o minimizar la ventana, que se ajusten al tamaño de ventana*/
+    flex-wrap: wrap;
+    /* Para que se vea centradas las imagenes al ajustar el tamaño de la ventana */
+    justify-content: center;
+}
+/* Todas las imagenes tendran el mismo tamaño */
+img{
+    /* ancho */
+    width: 600px;
+    /* largo */
+    height: 400px;
+    /* Espacio entre las imagenes  */
+    margin: 10px;
+    /* Cada que se implemente alguna transicion lo realizara de anera gradual para que se vea bien visualmente */
+    transition: all 1s;
+}
+
+img:hover{
+    /* escala la imagen al 110% de su tamaño original cuando se coloca el mouse sobre ella. */
+    transform: scale(1.1);
+}
+
+h1{
+    font-family: fantasy;
+    /* Recordemos que EM se refiere a que el tamaño va a ser 3 veces mas que el texto original */
+    font-size: 3em;
+    /* Ponemos un borde en la parte de abajo del titulo rosado  */
+    border-bottom: 2px solid pink;
+    /* Largo del borde que pusimos en la linea de arriba */
+    width: 400px;
+    /* que el h1 este en la mitad del borde bottom */
+    text-align: center;
+    /* añadimos el borde de la derecha */
+    border-right: 2px solid pink;
+    margin-top:10px;
+    box-shadow: 4px 4px 5px #888888;
+}
+
+
+
